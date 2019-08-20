@@ -1,4 +1,4 @@
-# Backend - CRUD de TODO
+# Backend - CRUD de TODO <!-- omit in toc --> 
 
 > Date: August 19, 2019  
 > author: [Oscar Broch Junior](https://github.com/brochj)
@@ -14,7 +14,7 @@
 - Routes params
 - Request body
 
-### Funcionalidades
+### Funcionalidades implementadas
 | Métodos |         Rota        |                     Body                     |            Descrição           |
 |:-------:|:-------------------:|:--------------------------------------------:|:------------------------------:|
 |**GET** |     `/projects`      |                      -                      |    Listar todos os projetos    |
@@ -23,10 +23,17 @@
 |**POST**|     `/projects`      |`{"id": "1","title": "Projeto", "tasks": [ ]}` |        Adicionar projeto       |
 |**POST**|`/projects/:id/tasks` |     `{"title": "estudar hoje a noite"}`     | Adicionar Tarefa em um projeto |
 
+---
+## Para utilizar
+#### 1. Instalar as dependências
+`npm install`
+#### 2. Rodar o nodemon
+`yarn dev`
 
-
-## Desafio 01. Conceitos do NodeJS
-
+---
+### Proposta do Desafio 01. Conceitos do NodeJS
+> Retirado de [bootcamp-gostack-desafio-01](https://github.com/Rocketseat/bootcamp-gostack-desafio-01)
+> 
 Crie uma aplicação do zero utilizando Express.
 
 Essa aplicação será utilizada para armazenar projetos e suas tarefas.
@@ -63,10 +70,3 @@ Se eu chamar a rota `POST /projects` repassando `{ id: 1, title: 'Novo projeto' 
 
 - Crie um middleware global chamado em todas requisições que imprime (`console.log`) uma contagem de quantas requisições foram feitas na aplicação até então;
 
-### Entrega
-
-Esse desafio **não precisa ser entregue** e não receberá correção, mas você pode ver o resultado do código do desafio aqui: https://github.com/Rocketseat/bootcamp-gostack-desafio-01
-
-Após concluir o desafio, adicionar esse código ao seu Github é uma boa forma de demonstrar seus conhecimentos para oportunidades futuras.
-
-“Sua única limitação é você mesmo”!
