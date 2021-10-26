@@ -19,7 +19,7 @@
 |:-------:|:-------------------:|:--------------------------------------------:|:------------------------------:|
 |**GET** |     `/projects`      |                      -                      |    Listar todos os projetos    |
 |**DEL** |   `/projects/:id`    |                      -                      |         Deletar projeto        |
-|**PUT** |   `/projects/:id`    |                      -                      |    Alterar Título do projeto   |
+|**PUT** |   `/projects/:id`    |    `{"title": "new title"}`                 |    Alterar Título do projeto   |
 |**POST**|     `/projects`      |`{"id": "1","title": "Projeto", "tasks": [ ]}` |        Adicionar projeto       |
 |**POST**|`/projects/:id/tasks` |     `{"title": "estudar hoje a noite"}`     | Adicionar Tarefa em um projeto |
 
